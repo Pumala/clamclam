@@ -1,0 +1,240 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/***************
+**  Style **
+****************/
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.purple {
+    color: #b502fd;
+}
+
+.container {
+    position: static;
+    padding-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+}
+
+/******************
+**  All Sections **
+*******************/
+
+.section {
+    width: 100%;
+    padding: 7em .5em;
+}
+
+h1, .subHeads {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+}
+
+.subHeads {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+/*************
+**  Home **
+*************/
+
+.section:first-of-type {
+    padding: 12em .5em;
+}
+
+.red {
+    width: 100%;
+    order: 1;
+    background-color: #E8D123;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+
+.homeContents > h2 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+/*************
+**  About **
+*************/
+
+.orange {
+    background-color: #fff;
+    width: 100%;
+    order: 2;
+}
+
+.aboutBodies > p {
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-size: 1em;
+    color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+/*************
+**  Projects **
+*************/
+
+#projects {
+    padding: 5em 0 7em 0;
+}
+
+#projects .subHeads {
+    padding-left: 1em;
+}
+
+.light_green {
+    width: 100%;
+    order: 3;
+}
+
+.bodyPics {
+    width: 100%;
+    float: left;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*************
+**  Connect **
+*************/
+
+.yellow {
+    background-color: black;
+    width: 100%;
+    order: 4;
+    color: gray;
+    font-family: 'Pompiere', cursive;
+}
+
+.connectSplits {
+    float: left;
+    width: 90%;
+    padding: 5%;
+}
+
+.connectBodies p,
+.connectBodies li {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+}
+#connect .subHeads {
+    color: #fff;
+}
+
+i {
+    margin-right: 5%;
+}
+
+.connectSplits li {
+    padding: 10px 0;
+}
+
+/*************
+**  Footer **
+*************/
+
+.footer {
+    width: 100%;
+    order: 4;
+    background-color: black;
+    padding: 1em .5em 2em .5em;
+    color: gray;
+}
+
+.footer-contents > p {
+    font-size: .85em;
+    border-top: 2px solid #8F2EC7;
+    padding-top: .5em;
+}
+
+/*******************
+**  Media Queries **
+********************/
+
+@media screen and (min-width: 550px) {
+    .bodyPics {
+        width: 50%;
+    }
+    .connectSplits {
+        width: 40%;
+        padding: 5%;
+    }
+    .connectSplits:first-of-type {
+        width: 90%;
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    h1 {
+        font-size: 3.25em;
+    }
+    .homeContents > h2 {
+        font-size: 1.3em;
+    }
+    .subHeads {
+        font-size: 2.25em;
+    }
+    .aboutBodies > p {
+        font-size: 1.25em;
+    }
+    .connectBodies p,
+    .connectBodies li {
+        font-size: 1.5em;
+    }
+    .footer-contents > p {
+    font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .bodyPics {
+        width: 33.3%;
+    }
+    .connectSplits, .connectSplits:first-of-type {
+        width: 29.3%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    h1 {
+        font-size: 4.5em;
+    }
+    .homeContents > h2 {
+        font-size: 1.5em;
+    }
+    .section:first-of-type {
+    padding: 15.5em .5em;
+    }
+    .innerBox {
+        width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
