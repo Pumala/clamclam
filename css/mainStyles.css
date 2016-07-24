@@ -111,11 +111,16 @@ h1 {
     order: 3;
 }
 
+.bodyPics a > img {
+    width: 100%;
+}
+
 .bodyPics {
     width: 100%;
     float: left;
     padding: 0;
     cursor: pointer;
+    margin-bottom: -2px;
 }
 
 /*************
@@ -236,5 +241,13 @@ i {
         width: 1150px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .bodyPics {
+        height: 345.109px;
+        overflow: hidden;
+    }
+    .bodyPics a > img:hover {
+        width: 140%;
+        margin-left: -77px;
     }
 }
